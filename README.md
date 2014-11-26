@@ -23,9 +23,9 @@ pip install -r requirements.txt
 ###Directories
 Create original directory and assets directory in the same folder as app.py
 ## Running using nginx, upstart and uwsgi
-Copy resizer.conf to /etc/init
-Copy nginx_conf to /etc/nginx/sites-available/default
-Make sure resizer.sh is executable
+- Copy resizer.conf to /etc/init
+- Copy nginx_conf to /etc/nginx/sites-available/default
+- Make sure resizer.sh is executable
 ```
 sudo service resizer start
 sudo service nginx restart
@@ -33,6 +33,6 @@ sudo service nginx restart
 
 ## Usage
 ### Width and height
-Url pattern url/to/file/<width>/<height>/filename.png
+Url pattern url/to/file/&lt;width&gt;/&lt;height&gt;/filename.png
 ### Keep ratio
 Use the same pattern as above but replace either width or height with "x"
