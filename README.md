@@ -14,6 +14,7 @@ sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 mkvirtualenv resizer
+workon resizer
 ```
 ### Python stuff
 ```
@@ -24,7 +25,7 @@ Create original directory and assets directory in the same folder as app.py
 ## Running using nginx, upstart and uwsgi
 Copy resizer.conf to /etc/init
 Copy nginx_conf to /etc/nginx/sites-available/default
-
+Make sure resizer.sh is executable
 ```
 sudo service resizer start
 sudo service nginx restart
